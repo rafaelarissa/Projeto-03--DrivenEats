@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>DrivenEats</title>
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <p><span class="nome-principal">DrivenEats</span></p>
+            <p><span class="legenda">Sua comida em 6 minutos</span></p>
+        </div>
+    </header>
+
+    <main>
+        <div class="fileira">
+            <div class="titulo-fileira">Primeiro, seu prato</div>
+            <div class="fileira-itens">
+                <div class="item" onclick="SelecionandoPrimeiroItemA()" id="primeiroA">
+                    <figure><img src="assets/frango_yin_yang 1.png">
+                        <figcaption>Frango Yin Yang</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Um pouco de batata, um pouco de salada</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-prato-A">14.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeA"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="SelecionandoPrimeiroItemB()" class="item" id="primeiroB">
+                    <figure><img src="assets/frango_yin_yang 1.png">
+                        <figcaption>Frango Yin Yang</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Um pouco de batata, um pouco de salada</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-prato-B">14.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeB"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="SelecionandoPrimeiroItemC()" class="item" id="primeiroC">
+                    <figure><img src="assets/frango_yin_yang 1.png">
+                        <figcaption>Frango Yin Yang</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Um pouco de batata, um pouco de salada</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-prato-C">14.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeC"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fileira">
+            <div class="titulo-fileira">Agora, sua bebida</div>
+            <div class="fileira-itens">
+                <div onclick="SelecionandoSegundoItemD()" class="item" id="segundoD">
+                    <figure><img src="assets/coquinha_gelada 1.png">
+                        <figcaption>Coquinha gelada</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Lata 350ml</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-coca-D">4.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeD"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="SelecionandoSegundoItemE()" class="item" id="segundoE">
+                    <figure><img src="assets/coquinha_gelada 1.png">
+                        <figcaption">Coquinha gelada</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Lata 350ml</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-coca-E">4.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeE"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="SelecionandoSegundoItemF()" class="item" id="segundoF">
+                    <figure><img src="assets/coquinha_gelada 1.png">
+                        <figcaption>Coquinha gelada</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Lata 350ml</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-coca-F">4.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeF"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fileira">
+            <div class="titulo-fileira">Por fim, sua sobremesa</div>
+            <div class="fileira-itens">
+                <div onclick="SelecionandoTerceiroItemG()" class="item" id="terceiroG">
+                    <figure><img src="assets/pudim 1.png">
+                        <figcaption>Pudim</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Apenas pudim</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-sobremesa-G">7.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeG"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="SelecionandoTerceiroItemH()" class="item" id="terceiroH">
+                    <figure><img src="assets/pudim 1.png">
+                        <figcaption>Pudim</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Apenas pudim</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-sobremesa-G">7.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeH"></ion-icon>
+                    </div>
+                </div>
+                <div onclick="SelecionandoTerceiroItemI()" class="item" id="terceiroI">
+                    <figure><img src="assets/pudim 1.png">
+                        <figcaption>Pudim</figcaption>
+                    </figure>
+                    <div class="descricao-prato">Apenas pudim</div>
+                    <div class="preco-icone">
+                        <div class="preco">R$ <span id="preco-sobremesa-G">7.90</span></div>
+                        <ion-icon class="icone" name="checkmark-circle" id="iconeI"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-botao">
+            <button id="idBotao">Selecione os 3 itens<br> para fechar o pedido</button>
+            <button onclick="WhatsApp()" id="idBotaoAtivado">Fechar pedido</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
